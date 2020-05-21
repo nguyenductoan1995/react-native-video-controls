@@ -472,7 +472,7 @@ export default class VideoPlayer extends Component {
     state.isFullscreen = !state.isFullscreen;
 
     if (this.props.toggleResizeModeOnFullscreen) {
-      state.resizeMode = state.isFullscreen === true ? 'cover' : 'contain';
+      // state.resizeMode = state.isFullscreen === true ? 'cover' : 'contain'; dev toan
     }
 
     if (state.isFullscreen) {
