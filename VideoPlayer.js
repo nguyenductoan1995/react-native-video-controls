@@ -994,7 +994,7 @@ export default class VideoPlayer extends Component {
    */
   renderFullscreen() {
     let source =
-      this.state.isFullscreen === true
+      this.props.isFullscreen === true
         ? require('./assets/img/shrink.png')
         : require('./assets/img/expand.png');
     return this.renderControl(
